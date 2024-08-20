@@ -1,0 +1,126 @@
+.carousel-inner .simg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-blog1{
+        
+        animation-name: fade-in-left;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        direction: normal;
+        animation-fill-mode: both;
+        
+}
+.about-blog2{
+        animation-name: fade-in-right;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        direction: normal;
+        animation-fill-mode: both;   
+}
+
+ @-webkit-keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-in-right
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+      
+
+
+
+
+      /* Responsive */
+
+@media (min-width: 762px) and (max-width:1024px){
+    .col-md-6 .bd-placeholder-img {
+        width: 100%; /* Full width of container */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Cover entire container space */
+        object-position: center; /* Center image */
+        height: 250px;
+    }
+
+    .col-md-6 .col-auto.d-lg-block {
+        flex: 1 1 auto; 
+    }
+}
+ 
+@media (max-width: 540px) {
+     .col-md-6 .bd-placeholder-img {
+         width: 100%; /* Full width of container */
+         height: auto; /* Maintain aspect ratio */
+         object-fit: cover; /* Cover entire container space */
+         object-position: center; /* Center image */
+         height: 200px;
+     }
+ 
+     .col-md-6 .col-auto.d-lg-block {
+         flex: 1 1 auto; 
+     }
+ 
+     .col-md-6 .row {
+         flex-direction: column-reverse; /* Stack text above image */
+     }
+
+     .slideresp{
+        height: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+     }
+    
+}
